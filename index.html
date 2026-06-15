@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Area 46 Gaming Cafe in Perambalur is the ultimate premium gaming lounge. Experience PlayStation 5, realistic F1 Racing Simulator, immersive VR, Projector Gaming, Movie projector room, and surprise events. Go Beyond!">
+    <meta name="keywords"
+        content="Gaming Cafe Perambalur, PlayStation Gaming, VR Gaming, F1 Racing Simulator, Gaming Hangout Spot, Entertainment Center, Projector Gaming, Surprise Events, Area 46 Gaming Cafe, Perambalur Gaming, Vasanthan V Partner">
+    <meta name="author" content="Area 46 Gaming Cafe">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Area 46 Gaming Cafe - Go Beyond | Perambalur">
+    <meta property="og:description"
+        content="Perambalur's premium gaming lounge featuring PS5, VR, F1 Simulators, Projector Rooms, and Special Events.">
+    <meta property="og:image" content="assets/logo.jpg">
+    <meta property="og:type" content="website">
+
+    <title>Area 46 Gaming Cafe - Go Beyond | Premium Gaming Lounge Perambalur</title>
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Style CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div id="scrollProgressBar" class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo-wrapper">
+                <img src="assets/logo.jpg" alt="Area 46 Logo" class="loading-logo">
+                <div class="loading-logo-glow"></div>
+            </div>
+            <h2 class="loading-text">BOOTING AREA 46</h2>
+            <div class="loading-bar-wrapper">
+                <div class="loading-bar"></div>
+            </div>
+            <p class="loading-subtext">Initializing Gaming systems...</p>
+        </div>
+    </div>
+
+    <!-- Custom Mouse Glow Follower -->
+    <div id="mouseGlow" class="mouse-glow"></div>
+
+    <!-- Particle Background Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Header / Navigation Menu -->
+    <header id="main-header">
+        <div class="header-container">
+            <a href="#home" class="logo-area">
+                <img src="assets/logo.jpg" alt="Area 46 Logo" class="nav-logo">
+                <span class="logo-text">AREA 46</span>
+            </a>
+
+            <nav class="desktop-nav">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experiences" class="nav-link">Experiences</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#why-choose-us" class="nav-link">Why Choose Us</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn-glow-small">Book Now</a>
+                <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Panel -->
+    <div class="mobile-nav-panel">
+        <a href="#home" class="mobile-nav-link">Home</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#experiences" class="mobile-nav-link">Experiences</a>
+        <a href="#gallery" class="mobile-nav-link">Gallery</a>
+        <a href="#why-choose-us" class="mobile-nav-link">Why Choose Us</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <a href="#contact" class="mobile-nav-link btn-mobile-book">Book Session</a>
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-content text-center">
+                <div class="glow-tagline animate-fade-up">
+                    <span class="tag-line-text">WELCOME TO PERAMBALUR'S ULTIMATE GAMING HUB</span>
+                </div>
+                <h1 class="hero-title animate-fade-up-2">
+                    AREA 46 <span class="neon-purple">GAMING</span> <span class="neon-blue">CAFE</span>
+                </h1>
+                <p class="hero-tagline animate-fade-up-3">Go Beyond</p>
+                <p class="hero-description animate-fade-up-4">
+                    Experience premium PlayStation gaming, VR adventures, F1 racing simulation, projector gaming,
+                    movies, and unforgettable surprise events.
+                </p>
+                <div class="hero-buttons animate-fade-up-5">
+                    <a href="#contact" class="btn-glow btn-primary-neon">
+                        <span>Book Your Session</span>
+                        <i class="fa-solid fa-gamepad"></i>
+                    </a>
+                    <a href="#experiences" class="btn-outline-neon">
+                        <span>Explore Experiences</span>
+                        <i class="fa-solid fa-circle-play"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span class="scroll-mouse">
+                    <span class="scroll-wheel"></span>
+                </span>
+                <p>Scroll Down</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-reveal">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text-content">
+                        <div class="section-tag">
+                            <i class="fa-solid fa-shield-halved"></i> THE NEXT GENERATION
+                        </div>
+                        <h2 class="section-title">Welcome to <span class="neon-text-glow-purple">Area 46</span></h2>
+                        <p class="about-lead">
+                            Area 46 Gaming Cafe is Perambalur's ultimate gaming and entertainment destination.
+                        </p>
+                        <p class="about-paragraph">
+                            Whether you're competing with friends, enjoying immersive VR experiences, racing on
+                            professional simulators, or celebrating special moments, Area 46 delivers a next-level
+                            experience. We bring state-of-the-art gaming stations, high-end comfort, and an atmosphere
+                            designed to let you completely escape reality.
+                        </p>
+
+                        <!-- Quick Stats -->
+                        <div class="about-stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-num neon-purple">4K</span>
+                                <span class="stat-label">Ultra HD Graphics</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-num neon-blue">100%</span>
+                                <span class="stat-label">Immersion Guaranteed</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-num neon-purple">120Hz</span>
+                                <span class="stat-label">High Refresh Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual-content">
+                        <div class="image-stack">
+                            <div class="main-stack-img-wrapper glow-border-purple">
+                                <img src="assets/hero-bg.png" alt="Area 46 Lounge Setup" class="about-img">
+                            </div>
+                            <div class="glass-info-badge animate-float">
+                                <i class="fa-solid fa-trophy text-yellow"></i>
+                                <div>
+                                    <h4>Premium Quality</h4>
+                                    <p>State of the art setups</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiences Section -->
+        <section id="experiences" class="experiences-section section-reveal">
+            <div class="container">
+                <div class="text-center section-header">
+                    <div class="section-tag inline-flex"><i class="fa-solid fa-gamepad"></i> MISSION TARGETS</div>
+                    <h2 class="section-title">Our Gaming <span class="neon-text-glow-blue">Experiences</span></h2>
+                    <p class="section-subtitle">
+                        Choose your adventure. We have equipped the area with the absolute best in modern interactive
+                        gaming entertainment.
+                    </p>
+                </div>
+
+                <div class="experiences-grid">
+
+                    <!-- Card 1 -->
+                    <div class="experience-card glow-on-hover-purple">
+                        <div class="exp-icon-wrapper">
+                            <i class="fa-brands fa-playstation exp-icon"></i>
+                        </div>
+                        <h3 class="exp-title">PlayStation Gaming</h3>
+                        <p class="exp-desc">
+                            Dive into high-fidelity 4K multiplayer action on PlayStation 5 with premium dualsense
+                            controllers and large immersive displays.
+                        </p>
+                        <div class="exp-footer">
+                            <span class="exp-feature"><i class="fa-solid fa-circle-check text-purple"></i> PS5 Pro
+                                ready</span>
+                            <span class="exp-feature"><i class="fa-solid fa-circle-check text-purple"></i> DualPlay
+                                Coop</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="experience-card glow-on-hover-blue">
+                        <div class="exp-icon-wrapper blue-icon">
+                            <i class="fa-solid fa-gauge-high exp-icon"></i>
+                        </div>
+                        <h3 class="exp-title">F1 Racing Simulator</h3>
+                        <p class="exp-desc">
+                            Feel every turn and curb on our professional F1 simulator cockpit. Real force feedback,
+                            triple curved monitors, and precision pedals.
+                        </p>
+                        <div class="exp-footer">
+                            <span class="exp-feature"><i class="fa-solid fa-circle-check text-blue"></i> Direct Drive
+                                Wheel</span>
+                            <span class="exp-feature"><i class="fa-solid fa-circle-check text-blue"></i> Triple
+                                Display</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="experience-card glow-on-hover-purple">
+                        <div class="exp-icon-wrapper">
+                            <i class="fa-solid fa-vr-cardboard exp-icon"></i>
+                        </div>
+                        <h3 class="exp-title">Virtual Reality Gaming</h3>
+                        <p class="exp-desc">
+                            Step beyond the screen. Immerse yourself in full 360° interactive VR gaming with responsive
+                            3D audio and motion controllers.
+                        </p>
+                        <div class="exp-footer">
+                            <span class="exp-feature"><i class="fa-solid fa-circle-check text-purple"></i> 360°
+                                Freedom</span>
+                            <span class="exp-feature"><i class="fa-solid fa-circle-check text-purple"></i> Next-Gen
+                                Tracking</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="experience-card glow-on-hover-blue">
+                        <div class="exp-icon-wrapper blue-icon">
+                            <i class="fa-solid fa-tv exp-icon"></i>
+                        </div>
+                        <h3 class="exp-title">Projector Gaming</h3>
+                        <p class="exp-desc">
+                            Gaming scaled to epic proportions. Play your favorite multiplayer console games on huge,
+                            crystal-clear projection screens.
+                        </p>
+                        <div class="exp-footer">
+                            <span class="exp-feature"><i class="fa-solid fa-circle-check text-blue"></i> Giant
+                                Screens</span>
+                            <span class="exp-feature"><i class="fa-solid fa-circle-check text-blue"></i> Cozy
+                                Seating</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="experience-card glow-on-hover-purple">
+                        <div class="exp-icon-wrapper">
+                            <i class="fa-solid fa-clapperboard exp-icon"></i>
+                        </div>
+                        <h3 class="exp-title">Movie Projector Room</h3>
+                        <p class="exp-desc">
+                            Rent your private theater room. Stream movies, live match screenings, or sports with
+                            high-end surround sound audio setups.
+                        </p>
+                        <div class="exp-footer">
+                            <span class="exp-feature"><i class="fa-solid fa-circle-check text-purple"></i> Cinematic
+                                Dolby</span>
+                            <span class="exp-feature"><i class="fa-solid fa-circle-check text-purple"></i> Private
+                                booking</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="experience-card glow-on-hover-blue">
+                        <div class="exp-icon-wrapper blue-icon">
+                            <i class="fa-solid fa-cake-candles exp-icon"></i>
+                        </div>
+                        <h3 class="exp-title">Surprise Parties & Events</h3>
+                        <p class="exp-desc">
+                            Host the ultimate gamer birthday party or social event. Fully customized neon decorations,
+                            food arrangements, and group activities.
+                        </p>
+                        <div class="exp-footer">
+                            <span class="exp-feature"><i class="fa-solid fa-circle-check text-blue"></i> Custom
+                                Deco</span>
+                            <span class="exp-feature"><i class="fa-solid fa-circle-check text-blue"></i> Dedicated
+                                Host</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-choose-us" class="why-choose-section section-reveal">
+            <div class="container">
+                <div class="why-grid">
+                    <div class="why-visual">
+                        <div class="glow-box">
+                            <div class="glitch-card">
+                                <img src="assets/logo.jpg" alt="Area 46 Brand Badge" class="why-badge-img">
+                                <div class="badge-text">
+                                    <h3>AREA 46</h3>
+                                    <p>Go Beyond</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-text-content">
+                        <div class="section-tag"><i class="fa-solid fa-circle-question"></i> THE EDGE</div>
+                        <h2 class="section-title">Why Gamers Choose <span class="neon-text-glow-purple">Area 46</span>
+                        </h2>
+                        <p class="why-description">
+                            We aren't just a gaming center; we are Perambalur's signature high-end entertainment lounge.
+                            Here's what sets us apart:
+                        </p>
+
+                        <div class="why-features-list">
+                            <div class="feature-item">
+                                <div class="feature-icon-bullet"><i class="fa-solid fa-microchip"></i></div>
+                                <div>
+                                    <h4>Premium Gaming Setup</h4>
+                                    <p>State-of-the-art console setups, low-latency screens, and professional gaming
+                                        gear.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon-bullet"><i class="fa-solid fa-chair"></i></div>
+                                <div>
+                                    <h4>Comfortable Environment</h4>
+                                    <p>Ergonomic luxury gaming chairs, cozy lounge beanbags, and fully air-conditioned
+                                        spaces.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon-bullet"><i class="fa-solid fa-road"></i></div>
+                                <div>
+                                    <h4>Realistic Racing Simulator</h4>
+                                    <p>Professional grade F1 rig with dynamic force feedback to simulate actual track
+                                        racing physics.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon-bullet"><i class="fa-solid fa-tags"></i></div>
+                                <div>
+                                    <h4>Affordable Packages</h4>
+                                    <p>Reasonable hourly rates and bundle offers tailored for individual and squad
+                                        players.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon-bullet"><i class="fa-solid fa-graduation-cap"></i></div>
+                                <div>
+                                    <h4>Perfect Student Hangout Spot</h4>
+                                    <p>Located in Perambalur, we are the favorite hub for local college and school
+                                        gaming communities.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon-bullet"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                                <div>
+                                    <h4>Event & Party Arrangements</h4>
+                                    <p>We configure layouts, neon aesthetics, and lighting to host custom surprises and
+                                        birthday events.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section section-reveal">
+            <div class="container">
+                <div class="text-center section-header">
+                    <div class="section-tag inline-flex"><i class="fa-solid fa-images"></i> VISUAL DECK</div>
+                    <h2 class="section-title">The Area 46 <span class="neon-text-glow-blue">Gallery</span></h2>
+                    <p class="section-subtitle">Take a look inside Perambalur's premier gaming environment.</p>
+                </div>
+
+                <div class="gallery-grid">
+
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-card height-row-2">
+                        <img src="assets/hero-bg.png" alt="Modern Gaming Lounges" class="gallery-img">
+                        <div class="gallery-info">
+                            <h4>Gaming Lounge</h4>
+                            <p>Futuristic Ambience</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-card">
+                        <img src="assets/gallery-gaming.png" alt="PlayStation Setups" class="gallery-img">
+                        <div class="gallery-info">
+                            <h4>PlayStation Setup</h4>
+                            <p>4K Multi-station Gaming</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-card">
+                        <img src="assets/gallery-racing.png" alt="F1 Racing Simulator" class="gallery-img">
+                        <div class="gallery-info">
+                            <h4>Racing Cockpit</h4>
+                            <p>Realistic F1 Simulator</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-card">
+                        <img src="assets/gallery-vr.png" alt="VR VR gaming" class="gallery-img">
+                        <div class="gallery-info">
+                            <h4>VR Experience</h4>
+                            <p>Virtual Reality Worlds</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-card">
+                        <img src="assets/gallery-projector.png" alt="Projector room setup" class="gallery-img">
+                        <div class="gallery-info">
+                            <h4>Projector Arena</h4>
+                            <p>Big Screen gaming & movies</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 6 -->
+                    <div class="gallery-card width-col-2">
+                        <img src="assets/gallery-event.png" alt="Events and Parties celebration" class="gallery-img">
+                        <div class="gallery-info">
+                            <h4>Surprise Party Zone</h4>
+                            <p>Custom Event & Neon Decors</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section section-reveal">
+            <div class="container">
+                <div class="text-center section-header">
+                    <div class="section-tag inline-flex"><i class="fa-solid fa-star"></i> REVIEWS</div>
+                    <h2 class="section-title">Squad <span class="neon-text-glow-purple">Feedback</span></h2>
+                    <p class="section-subtitle">Hear what Perambalur's active gamers say about their experience at Area
+                        46.</p>
+                </div>
+
+                <div class="testimonials-grid">
+
+                    <!-- Card 1 -->
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="test-text">
+                            "Area 46 is the absolute best hangout spot in Perambalur! The PlayStation setups are
+                            high-end and the neon aesthetic is insane. It genuinely feels like a professional gaming
+                            lounge rather than just a basic gaming cafe."
+                        </p>
+                        <div class="test-user">
+                            <div class="user-avatar-placeholder"><i class="fa-solid fa-user-ninja"></i></div>
+                            <div>
+                                <h4>Karthick Raj</h4>
+                                <p class="user-sub">College Student</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="testimonial-card glowing-blue-card">
+                        <div class="stars text-blue">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="test-text">
+                            "I tried the F1 Racing Simulator and the realism is mind-blowing. The triple curved screen
+                            wrap-around and the steering force feedback are incredible. Highly recommend this to anyone
+                            who wants authentic racing simulation!"
+                        </p>
+                        <div class="test-user">
+                            <div class="user-avatar-placeholder avatar-blue"><i class="fa-solid fa-user-astronaut"></i>
+                            </div>
+                            <div>
+                                <h4>Arun Kumar</h4>
+                                <p class="user-sub">F1 Enthusiast</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="test-text">
+                            "We hosted a surprise birthday party here for our friend. The team arranged amazing neon
+                            lighting and custom decorations. Combined with projector gaming and VR, it made it a night
+                            to remember!"
+                        </p>
+                        <div class="test-user">
+                            <div class="user-avatar-placeholder"><i class="fa-solid fa-user-secret"></i></div>
+                            <div>
+                                <h4>Sneha S.</h4>
+                                <p class="user-sub">Competitive Gamer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram CTA Section -->
+        <section id="instagram-cta" class="instagram-cta-section section-reveal">
+            <div class="container">
+                <div class="instagram-cta-card glass-card">
+                    <div class="cta-glow-bg"></div>
+                    <div class="instagram-grid-mockup">
+                        <div class="mockup-header">
+                            <div class="mockup-avatar">
+                                <img src="assets/logo.jpg" alt="Area 46 Logo">
+                            </div>
+                            <div class="mockup-user-info">
+                                <strong>area46gamingcafe</strong>
+                                <span>Perambalur, India</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="mockup-img-wrapper">
+                            <img src="assets/hero-bg.png" alt="Featured Post">
+                            <div class="mockup-overlay">
+                                <span><i class="fa-solid fa-heart"></i> 1.2k</span>
+                                <span><i class="fa-solid fa-comment"></i> 84</span>
+                            </div>
+                        </div>
+                        <div class="mockup-footer">
+                            <div class="mockup-actions">
+                                <div class="left-actions">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-regular fa-comment"></i>
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                            <p class="mockup-caption"><strong>area46gamingcafe</strong> Step into the arena. Experience
+                                the premium gaming setups at Perambalur. #Area46 #GoBeyond</p>
+                        </div>
+                    </div>
+                    <div class="instagram-cta-text">
+                        <div class="section-tag"><i class="fa-brands fa-instagram"></i> JOIN THE SQUAD</div>
+                        <h2 class="section-title">FOLLOW THE <span class="neon-text-glow-purple">ARENA</span></h2>
+                        <p class="cta-description">
+                            Stay updated on tournaments, new game releases, gaming night specials, and highlights of our
+                            elite esports setups. Follow our journey on Instagram.
+                        </p>
+                        <div class="cta-stats">
+                            <div class="cta-stat-item">
+                                <span class="stat-value neon-blue">5k+</span>
+                                <span class="stat-name">Followers</span>
+                            </div>
+                            <div class="cta-stat-item">
+                                <span class="stat-value neon-purple">460+</span>
+                                <span class="stat-name">Posts</span>
+                            </div>
+                            <div class="cta-stat-item">
+                                <span class="stat-value neon-blue">100%</span>
+                                <span class="stat-name">Gamer Vibe</span>
+                            </div>
+                        </div>
+                        <a href="https://www.instagram.com/area46gamingcafe?igsh=MTY4aGI0N2I1MHFwaQ==" target="_blank"
+                            class="btn-glow btn-instagram-gradient">
+                            <span>Connect on Instagram</span>
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partner Badge Section -->
+        <section class="partner-section section-reveal">
+            <div class="container text-center">
+                <div class="partner-badge-container glass-card">
+                    <div class="badge-accent-top"></div>
+                    <div class="partner-details">
+                        <span class="badge-tag">FOUNDING PARTNER</span>
+                        <h3 class="partner-name">Vasanthan V</h3>
+                        <p class="partner-role">Co-Founder & Partner, Area 46 Gaming Cafe</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-reveal">
+            <div class="container">
+                <div class="contact-grid">
+
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <div class="section-tag"><i class="fa-solid fa-wifi"></i> TRANSMISSION CHANNELS</div>
+                        <h2 class="section-title">Connect with <span class="neon-text-glow-blue">Area 46</span></h2>
+                        <p class="contact-sub">
+                            Ready to level up your gaming experience? Call, message, or drop in at our Perambalur
+                            branch. Follow our official links below:
+                        </p>
+
+                        <div class="contact-details-list">
+                            <a href="https://maps.app.goo.gl/i3KwmPFCCHCmqndc9" target="_blank"
+                                class="contact-detail-item interactive-location">
+                                <i class="fa-solid fa-location-dot contact-detail-icon"></i>
+                                <div class="location-text-group">
+                                    <h4>Location</h4>
+                                    <p>Perambalur, Tamil Nadu, India <span class="view-map-tag">View Map <i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i></span></p>
+                                </div>
+                            </a>
+
+                            <div class="contact-detail-item">
+                                <i class="fa-solid fa-clock contact-detail-icon"></i>
+                                <div>
+                                    <h4>Gaming Hours</h4>
+                                    <p>Monday - Sunday: 10:00 AM - 11:00 PM</p>
+                                    <p class="midnight-hours-badge"
+                                        style="font-size: 0.8rem; margin-top: 6px; color: var(--secondary-color); text-shadow: 0 0 5px rgba(0, 240, 255, 0.3); display: flex; align-items: center; gap: 6px;">
+                                        <i class="fa-solid fa-moon"></i> Midnight Gaming: 11:00 PM - 3:00 AM
+                                        (Pre-booking Only)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Neon Social Buttons -->
+                        <div class="social-channels">
+                            <!-- WhatsApp Link -->
+                            <a href="https://wa.me/917598946467" target="_blank" class="social-btn whatsapp-btn">
+                                <div class="social-icon-box"><i class="fa-brands fa-whatsapp"></i></div>
+                                <div class="social-label">
+                                    <span>WhatsApp Us</span>
+                                    <strong>+91 75989 46467</strong>
+                                </div>
+                            </a>
+
+                            <!-- Instagram Link -->
+                            <a href="https://www.instagram.com/area46gamingcafe?igsh=MTY4aGI0N2I1MHFwaQ=="
+                                target="_blank" class="social-btn instagram-btn">
+                                <div class="social-icon-box"><i class="fa-brands fa-instagram"></i></div>
+                                <div class="social-label">
+                                    <span>Follow Instagram</span>
+                                    <strong>@area46gamingcafe</strong>
+                                </div>
+                            </a>
+
+                            <!-- Snapchat Link -->
+                            <a href="https://www.snapchat.com/add/areagamingcafe?share_id=8NJ25N0HQ_8&locale=en-IN"
+                                target="_blank" class="social-btn snapchat-btn">
+                                <div class="social-icon-box"><i class="fa-brands fa-snapchat"></i></div>
+                                <div class="social-label">
+                                    <span>Snapchat</span>
+                                    <strong>areagamingcafe</strong>
+                                </div>
+                            </a>
+
+                            <!-- YouTube Link -->
+                            <a href="https://www.youtube.com/@Area46GamingCafe" target="_blank"
+                                class="social-btn youtube-btn">
+                                <div class="social-icon-box"><i class="fa-brands fa-youtube"></i></div>
+                                <div class="social-label">
+                                    <span>YouTube Channel</span>
+                                    <strong>@Area46GamingCafe</strong>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper glass-card">
+                        <h3 class="form-title">Launch Query</h3>
+                        <p class="form-subtitle">Enter your detail packets to reserve a setup.</p>
+
+                        <form id="booking-form" class="futuristic-form">
+                            <div class="form-group">
+                                <label for="name"><i class="fa-solid fa-user"></i> Gamer Tag / Name</label>
+                                <input type="text" id="name" placeholder="Enter your name" required>
+                                <span class="input-focus-line"></span>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone"><i class="fa-solid fa-phone"></i> Mobile Link</label>
+                                    <input type="tel" id="phone" placeholder="Your Phone Number" required>
+                                    <span class="input-focus-line"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="experience"><i class="fa-solid fa-gamepad"></i> Setup Choice</label>
+                                    <select id="experience" required>
+                                        <option value="" disabled selected>Select setup</option>
+                                        <option value="playstation">PlayStation 5 Gaming</option>
+                                        <option value="racing">F1 Racing Simulator</option>
+                                        <option value="vr">Virtual Reality Setup</option>
+                                        <option value="projector-game">Projector Gaming</option>
+                                        <option value="movie-room">Movie Projector Room</option>
+                                        <option value="party">Surprise Party booking</option>
+                                    </select>
+                                    <span class="input-focus-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message"><i class="fa-solid fa-message"></i> Mission Notes / Message</label>
+                                <textarea id="message" rows="4"
+                                    placeholder="Mention date, time, and number of players..."></textarea>
+                                <span class="input-focus-line"></span>
+                            </div>
+
+                            <button type="submit" class="btn-glow-submit btn-primary-neon">
+                                <span>SEND SIGNAL</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+
+                        <div id="form-success-msg" class="success-message-panel hidden">
+                            <i class="fa-solid fa-circle-check neon-blue icon-success"></i>
+                            <h4>SIGNAL TRANSMITTED</h4>
+                            <p>We've received your booking request! Our operators will call or WhatsApp you shortly to
+                                confirm your gaming slot.</p>
+                            <button id="reset-form-btn" class="btn-outline-neon btn-small">Send Another Signal</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Embedded Dark Google Map -->
+                <div class="map-container-wrapper section-reveal">
+                    <div class="map-header">
+                        <span><i class="fa-solid fa-map-location-dot"></i> SATELLITE LOCATOR MATRIX</span>
+                        <a href="https://maps.app.goo.gl/i3KwmPFCCHCmqndc9" target="_blank" class="map-link-btn">Open in
+                            Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <div class="map-frame-holder">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.6264906596395!2d78.8756885!3d11.2335195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bab07fb6a0669b9%3A0xe10839e944747eb1!2sArea%2046%20Gaming%20Cafe!5e0!3m2!1sen!2sin!4v1717670000000!5m2!1sen!2sin"
+                            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Area 46 Gaming Cafe Location Map">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="logo-area">
+                    <img src="assets/logo.jpg" alt="Area 46 Logo" class="footer-logo">
+                    <span class="logo-text">AREA 46</span>
+                </a>
+                <p class="footer-tagline">Go Beyond</p>
+                <p class="footer-desc">
+                    Perambalur's state-of-the-art gaming lounge. Bringing Playstation 5, high-end virtual reality,
+                    realistic F1 simulator, and cozy private theater rooms.
+                </p>
+            </div>
+
+            <div class="footer-links-grid">
+                <div>
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experiences">Experiences</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#why-choose-us">Why Choose Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Experiences</h4>
+                    <ul>
+                        <li><a href="#experiences">PlayStation Gaming</a></li>
+                        <li><a href="#experiences">F1 Racing Sim</a></li>
+                        <li><a href="#experiences">VR Adventures</a></li>
+                        <li><a href="#experiences">Projector Gaming</a></li>
+                        <li><a href="#experiences">Movie Screenings</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p class="copyright-text">&copy; 2026 Area 46 Gaming Cafe. All rights reserved. Managed by Vasanthan V.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://wa.me/917598946467" target="_blank" title="WhatsApp"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/area46gamingcafe?igsh=MTY4aGI0N2I1MHFwaQ==" target="_blank"
+                        title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.snapchat.com/add/areagamingcafe?share_id=8NJ25N0HQ_8&locale=en-IN"
+                        target="_blank" title="Snapchat"><i class="fa-brands fa-snapchat"></i></a>
+                    <a href="https://www.youtube.com/@Area46GamingCafe" target="_blank" title="YouTube"><i
+                            class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating FAB -->
+    <a href="https://wa.me/917598946467" target="_blank" class="whatsapp-float-fab"
+        aria-label="Book Session via WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="fab-pulse"></span>
+        <span class="fab-tooltip">Book a Slot!</span>
+    </a>
+
+    <!-- Custom Script JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
